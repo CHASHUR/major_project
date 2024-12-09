@@ -1,7 +1,54 @@
-gsap.from(".line h1", {
-    y: 150,
-    stagger: 0.2,
-    duration: 0.6, 
-    delay: 0.5 
+function LoadingAnimation() {
 
-})
+
+    var tl = gsap.timeline();
+
+    tl.from(".line h1", {
+        y: 150,
+        stagger: 0.2,
+        duration: 0.6, 
+        delay: 0.5 
+    
+    })
+    
+    tl.from(".line-left , .now", {
+    opacity: 0, 
+    onStart : function (params) {
+        
+      var h5 = document.querySelector('.line-left h5');
+      var a = 0
+      setInterval(function (params) {
+      if( a<100){
+      
+          h5.innerHTML= a++;
+      }
+      else{
+          h5.innerHTML=a; 
+      }
+         
+          
+      }, 33)
+      
+    }
+    })
+    
+    
+    tl.to('#loader',{
+    opacity : 0 , 
+    delay : 3, 
+    duratrion : 0.2 
+    })
+    
+    tl.from( '#page1', {
+        y: 1600, 
+        delay: 0.2, 
+        opacity: 0, 
+        ease : Power4 
+    })
+    
+    tl.to("#loader", {
+        display : "none "
+    })    
+}
+
+LoadingAnimation();
