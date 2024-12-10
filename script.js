@@ -27,7 +27,7 @@ function LoadingAnimation() {
 
 	tl.to("#loader", {
 		opacity: 0,
-		delay: 3,
+		delay: 0,
 		duratrion: 0.2,
 	});
 
