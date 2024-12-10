@@ -118,7 +118,7 @@ html, body {
 
 #main{
     position: relative;
-    background-color: #030303;
+    background-color: #151511
 
     
   
@@ -146,6 +146,15 @@ html, body {
 .right h2{
     font-size: 1vw;
     font-weight: 500;
+}
+.right::before{
+    content: "01";
+    position:absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif';
+    left: 20%;
+    top: 18%;
 }
 
 #hero{
@@ -258,12 +267,16 @@ z-index: 999;
     text-transform: uppercase;
 
 }
-.underline{
-    height: 1px;
-    width: 90%;
-    background-color: #fff ;
-    margin: 4vw 0 ;
+#page4-content h1::before{
+    content: "03";
+    position:absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif';
+    left: -12%;
+    top: 1%;
 }
+
 #page4-content>p { 
     font-size: 2vw;
     width: 50%;
@@ -369,4 +382,62 @@ animation-direction: reverse;
     to{
         transform: translateX(calc(-100% - 20px));
     }
+}
+
+#footer{
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    padding-left: 28vw;
+
+}
+#footer h1{
+    font-size: 7vw;
+    width: 60vw;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 500;
+}
+
+#footer h1::before{
+    content: "04";
+    position:absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif';
+    left: -12%;
+    top: 10%;
+}
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+}
+
+#footer-div h5{
+    font-size: 1.4vw;
+    margin: 0.2vh 0;
+    font-weight: 500;
+}
+
+#footer-div h6{
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+}
+
+.box{
+    width: 20%;
+}
+
+.footer-end h5{
+    font-size: 0.9vw;
+    left: 20%;
 }
