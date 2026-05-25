@@ -307,8 +307,8 @@ body {
     width: 71vw;
     position: relative;
     left: 28%;
-    background-color: red;
-    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    /* background-color: red; */
+    background-image: url("./assets/agency.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -1027,16 +1027,15 @@ body {
         position: relative;
     }
 
-    #video-container {
-        height: 52vh;
-        width: 100vw;
-        position: relative;
-        left: 0%;
-        background-color: red;
-        background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
-        background-size: cover;
-        background-position: center;
-    }
+   #video-container {
+    height: 66vh;
+    width: 71vw;
+    position: relative;
+    left: 28%;
+    background-image: url("./assets/agency.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
     #video-container video {
         height: 100%;
